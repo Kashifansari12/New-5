@@ -1,0 +1,22 @@
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Run Python Script 1
+            image: python:3.10
+            size: 4x
+            script:
+              - echo "MADE BY DEVILOWNER.."
+              - pip install python-telegram-bot telebot pymongo aiogram pytz 
+              - 
+              - chmod +x bgmi
+              - python3 mmm.py
+        - step:
+            name: Run Python Script 2
+            image: python:3.10
+            size: 4x
+            script:
+              - echo "MADE BY DEVILOWNER.."
+              - pip install python-telegram-bot telebot pymongo aiogram pytz
+              - chmod +x bgmi
+              - python3 mmm1.py
